@@ -1,26 +1,26 @@
 let students = [{
         name: "Alwaleed",
         age: 24,
-        url: "https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg"
+        url: "https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg",
+        gender: "male"
     },
     {
         name: "Faisal",
         age: 20,
-        url: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.imgonline.com.ua%2Feng%2Frandom-pixels-background.php&psig=AOvVaw1pe_sclNQk8EZPyfCvJi98&ust=1746700317739000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIjeuvOTkY0DFQAAAAAdAAAAABAE"
+        url: "https://images.pexels.com/photos/31829947/pexels-photo-31829947/free-photo-of-close-up-of-monstera-leaves-with-dew-drops.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load",
+        gender: "male"
+
     },
     {
         name: "Raseel",
         age: 15,
-        url: "https://repository-images.githubusercontent.com/260096455/47f1b200-8b2e-11ea-8fa1-ab106189aeb0"
+        url: "https://fastly.picsum.photos/id/893/200/200.jpg?hmac=MKUqbcyRrvAYoTmgHo74fEI3o9V4CH2kBrvWfmHkr7U",
+        gender: "fmale"
     }
 ]
 
 
-// students.forEach(student => {
-//     let text = document.createElement("h2");
-//     text.textContent = `URL is: ${student.url}`;
-//     document.body.appendChild(text);
-// });
+
 
 let container = document.body
 
@@ -28,5 +28,9 @@ students.forEach(el => {
     let img = document.createElement("img");
     img.src = el.url;
     container.appendChild(img);
+    img.style.width = "400px"
+    img.style.height = "400px"
+
 });
+
 console.log(students)
